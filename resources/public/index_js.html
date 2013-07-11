@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title>Even thread</title>
+    <style>
+        label { display: block; }
+    </style>
+</head>
+<body>
+
+<form id="quicksearch">
+    <fieldset>
+        <legend>Quicksearch</legend>
+
+        <p>
+            <label for="query">Query</label>
+            <input id="query" placeholder="Type to search">
+        </p>
+
+        <h2>Groups that match "<span id="query-title"></span>"</h2>
+
+        <ol id="results">
+            <li>No results</li>
+        </ol>
+    </fieldset>
+</form>
+
+<form id="response_order">
+    <fieldset>
+        <legend>Slowfast</legend>
+
+        <button id="slow">Slow</button>
+        <button id="fast">Fast</button>
+
+        <span id="latest_result">None</span>
+    </fieldset>
+</form>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/underscore.min.js"></script>
+<script type="text/javascript" src="js/pure_js.js"></script>
+
+</body>
+</html>
